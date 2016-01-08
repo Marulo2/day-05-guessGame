@@ -1,4 +1,12 @@
-header {
+.right {
+	color: green;
+}
+
+.wrong {
+	color: red;
+}
+
+/*header {
 	border: solid;
 	display: flex;
 	flex-direction: row;
@@ -42,4 +50,4 @@ footer p {
 	border: 1px solid black;
 	background-color: #fd2626;
 	text-align: center;
-}
+}*/
