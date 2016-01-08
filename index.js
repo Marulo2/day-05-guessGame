@@ -1,22 +1,17 @@
-//JavaScript for index.html
+
+var result3 = document.getElementById('res3');
+var result1 = document.getElementById('res1');
+var result2 = document.getElementById('res2');
 
 var counter = 0;
-
-
-// alert("Welcome to the Guessing Game!");
-// alert("Where you can win or lose nothing at all!");
 
 var user = prompt("Can we please have your name?");
   console.log("The user has input: " + user);
 
 alert("Welcome to the game, " + user + "!");
 
-// NEW STUFF
+var ans1;
 
-// CALL FUNCTION
-queAndAns();
-
-// ARRAY
 var quesData = [
   ["Are there more than 3 food trucks in the near vicinity of CodeFellows?",
   'y',
@@ -40,14 +35,10 @@ var quesData = [
   result3]
 ];
 
-// ID TAGS
-var result1 = document.getElementById('res1');
-var result2 = document.getElementById('res2');
-var result3 = document.getElementById('res3');
-var ans1;
+queAndAns();
 function queAndAns() {
   for (i = 0; i < quesData.length; i++) {
-    ans1 = prompt(quesData[i][0]);
+    var ans1 = prompt(quesData[i][0]);
     if (ans1.toLowerCase() === quesData[i][1] || ans1.toLowerCase() === quesData[i][2] ) {
       quesData[i][5].textContent = quesData[i][2];
       counter += 1;
