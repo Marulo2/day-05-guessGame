@@ -16,22 +16,22 @@ var quesData = [
   ["Are there more than 3 food trucks in the near vicinity of CodeFellows?",
   'y',
   'yes',
-  ans1 + ' That\'s right! And they are all fucking delicious!',
-  ans1 + ' Take a walk around the block and you\'ll find atleast three or four! Cheap and delicious!',
+  'That\'s right! And they are all fucking delicious!',
+  ' Take a walk around the block and you\'ll find atleast three or four! Cheap and delicious!',
   result1],
 
   ['Is CodeFellows awesome?',
   'y',
   'yes',
-  ans1 + ' Damn right it is! They keep ordering food too, holy crap!',
-  ans1 + ' Are you kidding me? You\'d better just be testing parameters here. Minus points for you!',
+  'Damn right it is! They keep ordering food too, holy crap!',
+  'Are you kidding me? You\'d better just be testing parameters here. Minus points for you!',
   result2],
 
   ['Did you grab any of the sweet CodeFellows merch?',
   'y',
   'yes',
-  ans1 + ' Sweet! Show it off duder/dudette!',
-  ans1 + ' Dang! You should try to get some!',
+  'Sweet! Show it off duder/dudette!',
+  'Dang! You should try to get some!',
   result3]
 ];
 
@@ -40,11 +40,11 @@ function queAndAns() {
   for (i = 0; i < quesData.length; i++) {
     var ans1 = prompt(quesData[i][0]);
     if (ans1.toLowerCase() === quesData[i][1] || ans1.toLowerCase() === quesData[i][2] ) {
-      quesData[i][5].textContent = quesData[i][2];
+      quesData[i][5].textContent = quesData[i][3];
       counter += 1;
       console.log("The has " + counter + " point(s).");
     } else {
-      quesData[i][5].textContent = quesData[i][3];
+      quesData[i][5].textContent = quesData[i][4];
     }
   }
 }
